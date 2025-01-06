@@ -1,0 +1,75 @@
+{
+  "anvil_cost": 1,
+  "description": {
+    "translate": "enchantment.unbreakable.unbreakable"
+  },
+  "effects": {
+    "minecraft:item_damage": [
+      {
+        "effect": {
+          "type": "unbreakable:unbreakable",
+          "amount": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:match_tool",
+          "predicate": {
+            "items": "#minecraft:enchantable/armor"
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "unbreakable:unbreakable",
+          "amount": {
+            "type": "minecraft:fraction",
+            "denominator": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.0
+            },
+            "numerator": {
+              "type": "minecraft:linear",
+              "base": 0.0,
+              "per_level_above_first": 0.0
+            }
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": "#minecraft:enchantable/armor"
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 1
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": "#minecraft:enchantable/durability",
+  "weight": 5
+}
